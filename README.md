@@ -1,7 +1,6 @@
 
-![Daily High Temperature in Madison](graphs/DailyHighTemp_USW00014837.png)
+![Daily High Temperature in Madison](graphs/DailyHighTemp_USW00093820.png)
 
-![Cumulative Annual Precipitation in Madison](graphs/AnnualCumulativePrecipitation_USW00014837.png)
+![Cumulative Annual Precipitation in Madison](graphs/AnnualCumulativePrecipitation_USW00093820.png)
 
-This is a fork of @jdjohn215's [Milwaukee Weather](https://github.com/jdjohn215/milwaukee-weather) repo. The code is slightly modified to better handle leap years (and of course to download data for Madison, Wisconsin.)
-
+This is a fork of @vgXhc's [Milwaukee Weather](https://github.com/vgXhc/madison-weather) repo. The code is modified to pull data from Bluegrass Station Airport, Lexington, KY.
