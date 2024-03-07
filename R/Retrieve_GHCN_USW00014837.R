@@ -14,7 +14,7 @@ library(tidyr)
 
 # download the zipped file
 temp <- tempfile()
-download.file("https://www1.ncdc.noaa.gov/pub/data/ghcn/daily/by_station/USW00014837.csv.gz",temp)
+download.file("https://www1.ncdc.noaa.gov/pub/data/ghcn/daily/by_station/USW00093820.csv.gz",temp)
 
 # unzip and read
 ghcn <- read_csv(temp,
@@ -46,5 +46,5 @@ ghcn.wide <- ghcn %>%
   select(year, month, day, date, day_of_year, PRCP, SNOW, SNWD,
          TMAX, TMIN) 
 
-write_csv(ghcn.wide, "data/GHCN_USW00014837.csv")
+write_csv(ghcn.wide, "data/GHCN_USW00093820.csv")
 
