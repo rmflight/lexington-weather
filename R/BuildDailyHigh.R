@@ -5,7 +5,7 @@ library(dplyr)
 library(lubridate)
 library(stringr)
 
-ghcn <- read_csv("data/GHCN_USW00014837.csv")
+ghcn <- read_csv("data/GHCN_USW00093820.csv")
 
 year.to.plot <- max(ghcn$year)
 last.date <- max(ghcn$date)
@@ -91,13 +91,13 @@ max.graph <- daily.summary.stats %>%
                      breaks = month.breaks$day_of_year + 15,
                      labels = month.breaks$month_name,
                      name = NULL) +
-  labs(title = "Daily High Temperature at Madison Truax Field",
+  labs(title = "Daily High Temperature at Lexington Bluegrass Airport",
        subtitle = paste("The line shows daily highs for",
                         paste0(lubridate::year(last.date), "."),
                         "The ribbons cover the",
                         "historical range. The last date shown is", 
                         format(last.date, "%b %d, %Y.")),
-       caption = paste("Records begin on April 1, 1938.",
+       caption = paste("Records begin in 1872.",
                        "This graph was last updated on", format(Sys.Date(), "%B %d, %Y."))) +
   theme(panel.background = element_blank(),
         panel.border = element_blank(),
