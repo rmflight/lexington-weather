@@ -3,7 +3,7 @@ on:
    - cron: "0 18 * * *"
  workflow_dispatch:
 
-name: Madison weather update
+name: Lexington weather update
 
 jobs:
   render:
